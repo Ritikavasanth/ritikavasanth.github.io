@@ -76,37 +76,3 @@ footer {
 html {
     scroll-behavior: smooth;
 }
-/* Beating Heart Animation */
-.heartbeat {
-    width: 60px;
-    height: 54px;
-    background: #e53935;
-    position: relative;
-    margin: 2rem auto;
-    transform: rotate(-45deg);
-    animation: beat 1s infinite;
-}
-.heartbeat::before,
-.heartbeat::after {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 54px;
-    background: #e53935;
-    border-radius: 50%;
-}
-.heartbeat::before {
-    top: -30px;
-    left: 0;
-}
-.heartbeat::after {
-    left: 30px;
-    top: 0;
-}
-@keyframes beat {
-    0%, 100% { transform: scale(1) rotate(-45deg);}
-    20% { transform: scale(1.1) rotate(-45deg);}
-    40% { transform: scale(0.95) rotate(-45deg);}
-    60% { transform: scale(1.05) rotate(-45deg);}
-    80% { transform: scale(0.97) rotate(-45deg);}
-}
