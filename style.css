@@ -13,12 +13,14 @@ header {
     padding: 1rem 2rem;
     text-align: center;
 }
-
 #home {
     background: #ffe082;
     color: #222;
     min-height: 60vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -46,7 +48,7 @@ section {
 #about {
     background: #f7cac9;
     color: #222;
-     min-height: 50vh; /* 50% of the viewport height */
+        min-height: 50vh; /* 50% of the viewport height */
 
 }
 
@@ -54,7 +56,6 @@ section {
     background: #92a8d1;
     color: #222;
     min-height: 50vh; /* 50% of the viewport height */
-
 }
 
 #contact {
@@ -70,4 +71,8 @@ footer {
     padding: 1rem 0;
     position: relative;
     width: 100%;
+}
+/*smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
