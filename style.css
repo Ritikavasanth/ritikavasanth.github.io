@@ -76,27 +76,37 @@ footer {
 html {
     scroll-behavior: smooth;
 }
-.dna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120px;
-    justify-content: space-between;
+/* Beating Heart Animation */
+.heartbeat {
+    width: 60px;
+    height: 54px;
+    background: #e53935;
+    position: relative;
     margin: 2rem auto;
+    transform: rotate(-45deg);
+    animation: beat 1s infinite;
 }
-.dot {
-    width: 20px;
-    height: 20px;
+.heartbeat::before,
+.heartbeat::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 54px;
+    background: #e53935;
     border-radius: 50%;
-    background: #1976d2;
-    animation: dna-move 1.5s infinite alternate;
 }
-.dot1 { animation-delay: 0s; }
-.dot2 { animation-delay: 0.3s; }
-.dot3 { animation-delay: 0.6s; }
-.dot4 { animation-delay: 0.9s; }
-.dot5 { animation-delay: 1.2s; }
-@keyframes dna-move {
-    0% { transform: translateX(0);}
-    100% { transform: translateX(40px);}
+.heartbeat::before {
+    top: -30px;
+    left: 0;
+}
+.heartbeat::after {
+    left: 30px;
+    top: 0;
+}
+@keyframes beat {
+    0%, 100% { transform: scale(1) rotate(-45deg);}
+    20% { transform: scale(1.1) rotate(-45deg);}
+    40% { transform: scale(0.95) rotate(-45deg);}
+    60% { transform: scale(1.05) rotate(-45deg);}
+    80% { transform: scale(0.97) rotate(-45deg);}
 }
