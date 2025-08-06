@@ -21,16 +21,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-     min-height: 80vh; /* 80% of the viewport height */
-    padding: 3rem 1rem;
-    font-size: 1.5rem;      
-    text-align: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 2px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
 
 }
 
@@ -63,15 +53,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 3rem 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 2px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
 }
 
 #projects {
@@ -81,15 +62,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 3rem 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 2px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
 
 }
 
@@ -100,15 +72,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
-    padding: 3rem 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 2px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
 }
 
 footer {
