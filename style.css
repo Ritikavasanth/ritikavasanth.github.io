@@ -76,3 +76,27 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+.dna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1976d2;
+    animation: dna-move 1.5s infinite alternate;
+}
+.dot1 { animation-delay: 0s; }
+.dot2 { animation-delay: 0.3s; }
+.dot3 { animation-delay: 0.6s; }
+.dot4 { animation-delay: 0.9s; }
+.dot5 { animation-delay: 1.2s; }
+@keyframes dna-move {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(40px);}
+}
