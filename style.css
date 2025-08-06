@@ -1,48 +1,6 @@
-body {
+body{
+    min-height: 100vh;
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fc0101;
-    color: #222;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
-
-header h1 {
-    margin: 0;
-}
-
-nav a {
-    color: #fff;
-    margin-left: 1rem;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
 }
