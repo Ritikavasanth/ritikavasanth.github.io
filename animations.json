@@ -1,0 +1,9 @@
+{
+  "particleCount": 300,
+  "heartSize": 120,
+  "beatSpeed": 1.2,
+  "particleColor": "#e53935",
+  "particleSize": 3,
+  "dispersion": 50,
+  "backgroundColor": "rgba(255, 224, 130, 1)"
+}
