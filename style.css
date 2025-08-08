@@ -8,19 +8,34 @@ body {
 }
 
 header {
-    background: #ffe082;
+    background: #000000;
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
 }
 #home {
-    background: #ffe082;
+    background: #000000;
     color: #222;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+     position: relative;
+    overflow: hidden;
+}
+#particles-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+    display: block;
+    pointer-events: none;
+}
+
+#home > *:not(canvas) {
+    position: relative;
+    z-index: 1;
 }
 
 nav a {
@@ -75,12 +90,4 @@ footer {
 /*smooth scrolling */
 html {
     scroll-behavior: smooth;
-}
-#heart-canvas {
-    display: block;
-    margin: 0 auto 2rem auto;
-    width: 100%;
-    max-width: 500px;
-    height: 300px;
-    background: transparent;
 }
