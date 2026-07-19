@@ -1,0 +1,9 @@
+.profile-container {
+  width: 300px; /* Or a percentage, e.g., 80% */
+  height: 400px; /* Set a fixed height for the scrollable area */
+  overflow-y: scroll; /* Enables vertical scrolling when content exceeds height */
+  /* Optional: Customize scrollbar appearance */
+  /* For WebKit browsers (Chrome, Safari): */
+  /* &::-webkit-scrollbar { width: 8px; } */
+  /* &::-webkit-scrollbar-thumb { background-color: #888; border-radius: 4px; } */
+}
